@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 # allow both GET and POST requests
-@app.route('/casa', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def form_example2():
 
     # handle the POST request
