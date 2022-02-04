@@ -18,7 +18,7 @@ def form_example2():
         user = request.form.get('inputKey')
         senha = request.form.get('inputValue')
 
-
+        user=""
         if user=='KNOX' and senha=='123456':
 
             html_2=""
@@ -57,5 +57,5 @@ def form_example2():
     
 if __name__ == '__main__':
     # run app in debug mode on port 5000
-    app.run(debug=False, port=5000)
+    app.run(debug=False, port=8080)
     
