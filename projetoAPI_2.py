@@ -11,6 +11,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def form_example2():
 
+    path = (str(os.getcwd().replace("\\", "/")) + "/")
     # handle the POST request
     if request.method == 'POST':
         user = request.form.get('inputKey')
@@ -20,7 +21,7 @@ def form_example2():
         if user=='KNOX' and senha=='123456':
 
             html_2=""
-            f = open('html_2.html', 'r')
+            f = open(path + 'html_2.html', 'r')
             for line in f:
                 html_2=html_2+line+'\n'
             
@@ -43,7 +44,7 @@ def form_example2():
     # otherwise handle the GET request
 
     html=""
-    f = open('html.html', 'r')
+    f = open(path + 'html.html', 'r')
     for line in f:
         html=html+line+'\n'
     
