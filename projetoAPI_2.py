@@ -26,7 +26,7 @@ def form_example2():
             
             html_2=html_2.replace('TOKEN_01',str(datetime.today())[:19])
 
-            token_05="Olá, " + user.upper() + "!!"
+            token_05="Ola, " + user.upper() + "!!"
             html_2=html_2.replace('TOKEN_05',token_05)
 
 
@@ -38,7 +38,7 @@ def form_example2():
                     <h1>The language value is: {}</h1>
                     <h1>The framework value is: {}</h1>'''.format(user, senha)
         else:
-            return('<h1>USUÁRIO OU SENHA INVÁLIDOS</h1>')
+            return('<h1>USUARIO OU SENHA INVALIDOS</h1>')
 
     # otherwise handle the GET request
 
