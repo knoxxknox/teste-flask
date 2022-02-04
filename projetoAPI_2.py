@@ -28,7 +28,7 @@ def form_example2():
             
             html_2=html_2.replace('TOKEN_01',str(datetime.today())[:19])
 
-            token_05="Ola, " + user.upper() + "!!"
+            token_05="Ola, " + user.upper()
             html_2=html_2.replace('TOKEN_05',token_05)
 
 
