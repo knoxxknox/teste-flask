@@ -49,7 +49,7 @@ def form_example2():
     for line in f:
         html=html+line+'\n'
     
-    html=html.replace('TOKEN_01',str(datetime.today())[:19])
+    html=html.replace('TOKEN_01','ASUHUDJBS286DB2WDIS')
 
     return(html)
 
